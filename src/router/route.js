@@ -5,6 +5,6 @@ const shortid = require('shortid')
 const urlController = require('../controller/urlController')
 
 
-router.post('/url/shorten',urlController.shorten)
+router.post('/url/shorten',urlController.createShort)
 router.get('/:urlCode',urlController.getUrl)
 module.exports=router
